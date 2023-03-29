@@ -12,7 +12,7 @@
             <div class="field">
                 <label class="label">New Todo</label>
                 <div class="control">
-                    <input v-model="newTodo" class="input" type="text" placeholder="Enter new todo">
+                    <input v-on:keyup.enter="addTodo" v-model="newTodo" class="input" type="text" placeholder="Enter new todo">
                 </div>
             </div>
             <div class="field">
